@@ -61,8 +61,6 @@ Qt for Python is a project that enables using the popular cross-platform, GUI-fo
 
 The project is available under the LGPLv3/GPLv3 and the Qt commercial license.
 
----
-
 <!--
 **adrianghc/adrianghc** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 -->
