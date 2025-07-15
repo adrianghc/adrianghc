@@ -19,18 +19,19 @@ From C/C++ to Python and in between, I work in the low-level (embedded programmi
 
 ### 📌 Pinned Repositories
 
-#### [ChaOS](https://github.com/adrianghc/chaos) - A small microkernel operating system
+#### [ChaOS](https://github.com/adrianghc/chaos) - A small operating system
 
-A small microkernel operating system developed from scratch for the ARM-based taskit Portux MiniPC SoC with an AT91RM9200 CPU, 16 MiB Flash memory and 64 MiB RAM. This project was developed during Barry Linnert's operating systems course at Freie Universität Berlin over the course of fourteen weeks in 2018-2019.
+A small operating system developed from scratch for the ARM-based taskit Portux MiniPC SoC with an AT91RM9200 CPU, 16 MiB Flash memory and 64 MiB RAM. This project was developed during Barry Linnert's operating systems course at Freie Universität Berlin over the course of fourteen weeks in 2018-2019, plus minor adjustments in subsequent years.
 
 Supported features include:
 
-- Serial interface (DBGU) driver (supports read/write, interrupts)
-- Processor modes, stacks, dynamic kernel memory management
-- Interrupt handlers (SWI, ABT, FIQ, IRQ, UND)
+- Serial interface (DBGU) driver via MMIO (supports read/write, interrupts)
+- Dynamic kernel memory management
+- Processor modes, stacks (svc, und, abt, irq, fiq)
+- Interrupt handlers (Undefined Instruction, SWI, Prefetch Abort, Data Abort, IRQ, FIQ)
 - System timer and scheduling
 - Processes/threads, context switches, simple round-robin-based scheduling (preemptive multitasking)
-- Memory protection with MMU, logical address spaces
+- Memory protection and logical address spaces via MMU
 - User/kernel interface (syscalls, utility library)
 
 There are also two example applications that demonstrate several capabilities of the kernel:
