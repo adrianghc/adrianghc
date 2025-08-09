@@ -62,6 +62,12 @@ Qt for Python is a project that enables using the popular cross-platform, GUI-fo
 
 The project is available under the LGPLv3/GPLv3 and the Qt commercial license.
 
+---
+
+#### [cpython-frame-disassembler](https://github.com/adrianghc/cpython-frame-disassembler) - CPython Frame Disassembler
+
+A debugging tool for Python C extensions that shows the current Python bytecode location during C-level debugging. When debugging C extensions, for example using GDB in VS Code, you lose track of where you are in the Python code. This tool prints the current Python frame's bytecode, making it easy to orient yourself in the CPython interpreter. Originally developed by Christian Tismer for PySide (Qt for Python) debugging where it has been used in production for years. This standalone version was extracted by me with contributions from Christian Tismer. It uses code from Shiboken by Qt.
+
 <!--
 **adrianghc/adrianghc** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 -->
